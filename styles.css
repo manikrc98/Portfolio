@@ -214,6 +214,21 @@ body {
     gap: var(--gap);
 }
 
+/* Grid Layout Utilities */
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: var(--card-size);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: var(--card-size);
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* ==================== */
 /* LIVE WORK GRID */
 /* ==================== */
@@ -411,6 +426,11 @@ body {
     object-fit: cover;
 }
 
+/* Hand Clicked Grid - override aspect-ratio for proper layout */
+.grid-cols-3 .photo-card {
+    aspect-ratio: unset;
+}
+
 /* ==================== */
 /* GRAPHIC GRID */
 /* ==================== */
@@ -445,11 +465,6 @@ body {
 /* ==================== */
 /* READING GRID */
 /* ==================== */
-.reading-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .book-card {
     background: white;
     aspect-ratio: 3/4;
@@ -460,6 +475,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Book Grid - override aspect-ratio for proper layout */
+.grid-cols-3 .book-card {
+    aspect-ratio: unset;
 }
 
 /* ==================== */
@@ -761,11 +781,11 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .grid-cols-3,
     .worked-grid,
     .proud-grid,
     .graphic-grid,
     .reco-grid,
-    .reading-grid,
     .photos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -786,12 +806,12 @@ body {
     .visuals-grid,
     .life-grid,
     .social-grid,
+    .grid-cols-3,
     .worked-grid,
     .proud-grid,
     .graphic-grid,
     .reco-grid,
     .links-grid,
-    .reading-grid,
     .photos-grid,
     .spotify-grid {
         grid-template-columns: 1fr;
