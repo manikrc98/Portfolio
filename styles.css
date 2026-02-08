@@ -265,14 +265,6 @@ body {
     grid-auto-rows: var(--card-size);
 }
 
-.cc-rewards-card {
-    background: linear-gradient(135deg, #4F46E5, #7C3AED);
-}
-
-.personal-finance-card {
-    background: #1a1a1a;
-}
-
 /* Card tall - spans 2 rows */
 .card-tall {
     grid-row: span 2 !important;
@@ -314,22 +306,6 @@ body {
     grid-auto-rows: var(--card-size);
 }
 
-.visuals-grid .visual-card:nth-child(1) {
-    background: linear-gradient(135deg, #10B981, #059669);
-}
-
-.visuals-grid .visual-card:nth-child(2) {
-    background: linear-gradient(135deg, #FCD34D, #F59E0B);
-}
-
-.visuals-grid .visual-card:nth-child(3) {
-    background: linear-gradient(135deg, #EF4444, #DC2626);
-}
-
-.visuals-grid .visual-card:nth-child(4) {
-    background: linear-gradient(135deg, #3B82F6, #2563EB);
-}
-
 /* ==================== */
 /* WORKED AT GRID */
 /* ==================== */
@@ -359,8 +335,6 @@ body {
     grid-auto-rows: var(--card-size);
 }
 
-.drive-card {}
-
 .life-card .card-image {
     object-position: center;
 }
@@ -375,10 +349,6 @@ body {
 .proud-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: var(--card-size);
-}
-
-.downloads-card {
-    background: linear-gradient(135deg, #6366F1, #8B5CF6);
 }
 
 .proud-card .card-image {
@@ -483,7 +453,6 @@ body {
 .map-card {
     aspect-ratio: auto;
     min-height: 120px;
-    background: #34D399;
 }
 
 .map-content {
@@ -503,38 +472,6 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: var(--text-secondary);
-}
-
-.instagram-card {
-    background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
-}
-
-.instagram-card .social-icon,
-.instagram-card .social-handle {
-    color: white;
-}
-
-.twitter-card {
-    background: #000000;
-}
-
-.twitter-card .social-icon,
-.twitter-card .social-handle {
-    color: white;
-}
-
-.linkedin-card {
-    background: #0077B5;
-}
-
-.linkedin-card .social-icon,
-.linkedin-card .social-handle {
-    color: white;
-}
-
-.map-card .social-icon,
-.map-card .social-handle {
-    color: white;
 }
 
 /* ==================== */
@@ -583,13 +520,7 @@ body {
     opacity: 0.6;
 }
 
-.resume-card,
-.framer-card {
-    background: #F5F5F5;
-}
-
 .email-card {
-    background: #1a1a1a;
     color: white;
     padding: 0;
 }
@@ -601,7 +532,6 @@ body {
 }
 
 .thank-you-card {
-    background: #FEF3C7;
     padding: 24px;
     display: flex;
     align-items: center;
