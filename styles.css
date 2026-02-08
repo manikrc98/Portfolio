@@ -289,31 +289,14 @@ body {
     grid-auto-rows: var(--card-size);
 }
 
-.fun-card-tall {
-    grid-row: span 2;
-}
-
 .fun-card {
     aspect-ratio: auto;
     min-height: var(--card-size);
 }
 
 /* ==================== */
-/* VISUALS GRID */
-/* ==================== */
-.visuals-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
-/* ==================== */
 /* WORKED AT GRID */
 /* ==================== */
-.worked-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .company-card {
     aspect-ratio: 1;
     display: flex;
@@ -330,11 +313,6 @@ body {
 /* ==================== */
 /* LIFE LEARNER GRID */
 /* ==================== */
-.life-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .life-card .card-image {
     object-position: center;
 }
@@ -346,11 +324,6 @@ body {
 /* ==================== */
 /* PROUD OF GRID */
 /* ==================== */
-.proud-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .proud-card .card-image {
     object-fit: cover;
 }
@@ -358,11 +331,6 @@ body {
 /* ==================== */
 /* PHOTOS GRID */
 /* ==================== */
-.photos-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .photo-card {
     aspect-ratio: 3/4;
 }
@@ -383,11 +351,6 @@ body {
 /* ==================== */
 /* GRAPHIC GRID */
 /* ==================== */
-.graphic-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .graphic-card {
     aspect-ratio: 1;
 }
@@ -395,11 +358,6 @@ body {
 /* ==================== */
 /* RECOMMENDATIONS GRID */
 /* ==================== */
-.reco-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .reco-card {
     background: white;
     padding: 0;
@@ -435,11 +393,6 @@ body {
 /* ==================== */
 /* SOCIAL GRID */
 /* ==================== */
-.social-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .social-card {
     display: flex;
     flex-direction: column;
@@ -477,11 +430,6 @@ body {
 /* ==================== */
 /* SPOTIFY GRID */
 /* ==================== */
-.spotify-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--card-size);
-}
-
 .spotify-card {
     background: transparent;
     border-radius: var(--card-radius);
@@ -498,10 +446,6 @@ body {
 /* ==================== */
 /* LINKS GRID */
 /* ==================== */
-.links-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .link-card {
     display: flex;
     align-items: center;
@@ -673,31 +617,12 @@ body {
         grid-template-rows: 200px;
     }
 
-    .fun-card-tall {
+    .fun-grid .card-tall {
         grid-row: span 1;
     }
 
-    .visuals-grid,
-    .life-grid,
-    .social-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .social-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .spotify-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .grid-cols-3,
-    .grid-cols-4,
-    .worked-grid,
-    .proud-grid,
-    .graphic-grid,
-    .reco-grid,
-    .photos-grid {
+    .grid-cols-4 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -714,19 +639,9 @@ body {
 
     .live-work-grid,
     .fun-grid,
-    .visuals-grid,
-    .life-grid,
-    .social-grid,
     .grid-cols-2,
     .grid-cols-3,
-    .grid-cols-4,
-    .worked-grid,
-    .proud-grid,
-    .graphic-grid,
-    .reco-grid,
-    .links-grid,
-    .photos-grid,
-    .spotify-grid {
+    .grid-cols-4 {
         grid-template-columns: 1fr;
     }
 
