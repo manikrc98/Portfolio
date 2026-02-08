@@ -16,6 +16,8 @@
     --gap: 40px;
     --card-size: 175px;
     --sidebar-width: 300px;
+    --color-dark: #1a1a1a;
+    --color-amber-text: #92400E;
 }
 
 html {
@@ -229,7 +231,7 @@ body {
 }
 
 /* Background Utilities - Solids */
-.bg-dark { background: #1a1a1a; }
+.bg-dark { background: var(--color-dark); }
 .bg-gray { background: #F5F5F5; }
 .bg-amber { background: #FEF3C7; }
 .bg-green { background: #34D399; }
@@ -443,6 +445,10 @@ body {
     box-shadow: none;
 }
 
+.spotify-card iframe {
+    border-radius: var(--card-radius-sm);
+}
+
 /* ==================== */
 /* LINKS GRID */
 /* ==================== */
@@ -483,7 +489,7 @@ body {
 
 .thank-you-text {
     font-size: 14px;
-    color: #92400E;
+    color: var(--color-amber-text);
     font-weight: 500;
     line-height: 1.5;
 }
@@ -521,7 +527,7 @@ body {
 .card-label {
     /* White rounded pill style matching reference */
     background: rgba(255, 255, 255, 0.95);
-    color: #1a1a1a;
+    color: var(--color-dark);
     font-size: 12px;
     font-weight: 500;
     padding: 6px 12px;
@@ -569,8 +575,8 @@ body {
 .link-icon svg {
     width: 14px;
     height: 14px;
-    color: #1a1a1a;
-    stroke: #1a1a1a;
+    color: var(--color-dark);
+    stroke: var(--color-dark);
 }
 
 .card:hover .link-icon {
