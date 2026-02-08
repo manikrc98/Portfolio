@@ -431,6 +431,10 @@ body {
     aspect-ratio: unset;
 }
 
+.grid-cols-4 .photo-card {
+    aspect-ratio: unset;
+}
+
 /* ==================== */
 /* GRAPHIC GRID */
 /* ==================== */
@@ -478,7 +482,8 @@ body {
 }
 
 /* Book Grid - override aspect-ratio for proper layout */
-.grid-cols-3 .book-card {
+.grid-cols-3 .book-card,
+.card-large.book-card {
     aspect-ratio: unset;
 }
 
