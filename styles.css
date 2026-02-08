@@ -643,6 +643,7 @@ body {
     .grid-cols-3,
     .grid-cols-4 {
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .card-tall,
