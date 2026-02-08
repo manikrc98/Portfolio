@@ -228,6 +228,30 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* Background Utilities - Solids */
+.bg-dark { background: #1a1a1a; }
+.bg-gray { background: #F5F5F5; }
+.bg-amber { background: #FEF3C7; }
+.bg-green { background: #34D399; }
+
+/* Background Utilities - Gradients */
+.bg-gradient-indigo { background: linear-gradient(135deg, #4F46E5, #7C3AED); }
+.bg-gradient-green { background: linear-gradient(135deg, #10B981, #059669); }
+.bg-gradient-amber { background: linear-gradient(135deg, #FCD34D, #F59E0B); }
+.bg-gradient-red { background: linear-gradient(135deg, #EF4444, #DC2626); }
+.bg-gradient-blue { background: linear-gradient(135deg, #3B82F6, #2563EB); }
+.bg-gradient-violet { background: linear-gradient(135deg, #6366F1, #8B5CF6); }
+
+/* Background Utilities - Branded */
+.bg-gradient-instagram { background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF); }
+.bg-twitter { background: #000000; }
+.bg-linkedin { background: #0077B5; }
+
+/* Text Utilities */
+.text-white { color: white; }
+.text-white .social-icon,
+.text-white .social-handle { color: white; }
+
 /* ==================== */
 /* LIVE WORK GRID */
 /* ==================== */
@@ -738,6 +762,7 @@ body {
     }
 
     .grid-cols-3,
+    .grid-cols-4,
     .worked-grid,
     .proud-grid,
     .graphic-grid,
@@ -762,7 +787,9 @@ body {
     .visuals-grid,
     .life-grid,
     .social-grid,
+    .grid-cols-2,
     .grid-cols-3,
+    .grid-cols-4,
     .worked-grid,
     .proud-grid,
     .graphic-grid,
@@ -774,9 +801,10 @@ body {
     }
 
     .card-tall,
-    .card-wide {
-        grid-row: span 1;
-        grid-column: span 1;
+    .card-wide,
+    .card-large {
+        grid-row: span 1 !important;
+        grid-column: span 1 !important;
     }
 
     .name {
