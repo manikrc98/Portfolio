@@ -16,7 +16,6 @@
     --gap: 40px;
     --card-size: 175px;
     --sidebar-width: 300px;
-    --gradient-blue: rgba(96, 165, 250, 0.4);
 }
 
 html {
@@ -246,13 +245,9 @@ body {
     background: linear-gradient(135deg, #4F46E5, #7C3AED);
 }
 
-.api-playground-card {}
-
 .personal-finance-card {
     background: #1a1a1a;
 }
-
-.compliance-card {}
 
 /* Card tall - spans 2 rows */
 .card-tall {
@@ -281,12 +276,6 @@ body {
 .fun-card-tall {
     grid-row: span 2;
 }
-
-#lazy-load {}
-
-#crash-course {}
-
-#thank-tank {}
 
 .fun-card {
     aspect-ratio: auto;
@@ -317,8 +306,6 @@ body {
     background: linear-gradient(135deg, #3B82F6, #2563EB);
 }
 
-.visuals-grid .visual-card:nth-child(5) {}
-
 /* ==================== */
 /* WORKED AT GRID */
 /* ==================== */
@@ -348,15 +335,7 @@ body {
     grid-auto-rows: var(--card-size);
 }
 
-.guitar-card {}
-
-.japanese-card {}
-
-.solo-card {}
-
 .drive-card {}
-
-.paint-card {}
 
 .life-card .card-image {
     object-position: center;
@@ -373,34 +352,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: var(--card-size);
 }
-
-.award-card {}
-
-.award-content {
-    text-align: center;
-}
-
-.award-badge {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.award-text {
-    font-size: 13px;
-    color: #92400E;
-    line-height: 1.4;
-}
-
-.trophy-card {}
-
-.speaking-card {}
-
-.mentoring-card {}
 
 .downloads-card {
     background: linear-gradient(135deg, #6366F1, #8B5CF6);
